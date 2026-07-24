@@ -93,4 +93,5 @@ async def janken(interaction: discord.Interaction, hand: app_commands.Choice[str
 # 【注意】
 # トークンは絶対に他人に見せたり、GitHubなどに公開したりしないでください。
 # トークンが漏れると、あなたのBotを誰でも操作できてしまいます。
-bot.run("MTUzMDA1MzI0MjUyMjk2NDA4Mw.GO-s3q.sKLgoMmFHnYxiCTim8feWBflIGVxoSLryQ6gD0")
+import os
+bot.run(os.environ.get("DISCORD_TOKEN"))
